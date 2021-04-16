@@ -1,145 +1,114 @@
-header{
-    background-color: rgba(219, 219, 219, 0.87);
-    padding: 10px;
+.row{
+    margin-right: 0px;
+
 }
-body{
+p{
+    font-family: Roboto;
+    margin-bottom: 0;
+    font-size:1vw
+}
+header{
     background-color: #eee;
 }
-
-a#img-logo img{
-    width: 200px;
-}
-.search-box{
-    padding: 6px;
-
-}
-.search-box input{
+.logo img{
     width: 50%;
-    border-style: inset;
-    border: 0px;
-    outline: none;
+    height: auto;
+    margin: 10px;
 }
-.search-icon{
-    width: 70px;
+.form-control{
+    width: 50%;
+    height: auto;
+    border-radius: 5px 0 0 5px;
+}
+.input-group-prepend{
+    margin: 10px;
+}
+.input-group-text{
+    width: 80px;
+    border-radius: 0 5px 5px 0px;
     background-color: #4387fd;
-}
-.search-icon i{
-    color: cornsilk;
     border: 0px;
 }
-button.search-icon{
-    border: 0px;
+.fas{
+    margin: 0 auto;
+    color: white;
 }
 
 
-/* BODY-MENU*/
 
-
-
-.menu{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+/* Mã css body */
+body .row{
+    padding-left: 0;
 }
-li{
+body{
+    background-color:rgba(212, 211, 211, 0.705);
+}
+.color-entertaiment{
+    background-color: #5f5e5e;
     padding: 15px;
 }
-#entertaiment{
-    background-color: #444;
-}
-#application{
+.color-application{
     background-color: #689f38;
-}
-#film{
-    background-color: #ed3b3b;
-}
-#book{
-    background-color: #039be5;
-}
-/* .img-menu-entertaiment{
-    background-color: #444;
     padding: 15px;
-} */
-.text-menu{
-    color: ghostwhite;
-    padding-left: 10px;
 }
-.img-menu{
-    width: 30px;
+.color-movie{
+    background-color: #ed3b3b;
+    padding: 15px;
+}
+.color-book{
+    background-color: #039be5;
+    padding: 15px;
+}
+span{
+    padding: 10px;
+    font-size: 20px;
+    font-family: roboto;
+
+}
+.text-entertaiment:hover{
+    background-color: #444444;
+    color: #eee;
+}
+.text-application:hover{
+    background-color: #689f38;
+    color: #eee;
+}
+.text-movie:hover{
+    background-color: #ed3b3b;
+    color: #eee;
+}
+.text-book:hover{
+    background-color: #039be5;
+    color: #eee;
 }
 
-/* BODY LIST */
-.header-button{
-    float: right;
-    padding-top: 18px;
-    background-color: rgba(92, 60, 199, 0.897);
-    padding-top: 0px;
-    padding: 3px;
-    border-radius: 5px;
-    color: cornsilk;
-}
-.header-text h2{
+
+/* Css của item  */
+
+
+.text-header-list{
     display: inline-block;
 }
+.header-button{
+    float: right;
+}
 .header-list{
-    padding-top: 22px;
+    padding: 30px 30px 30px 0px;
 }
-
-/* BODY ITEM */
-.item-product{
-    background-color: white;
-    padding: 10px;
-    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%), 0 1px 3px 0 rgb(0 0 0 / 20%);
+.item{
+    padding: 0.75em;
+    background-color: #eee;
 }
-.item-img span img{
-    width: 99%;
+.item-img img{
+    width: 100%;
 }
-.price{
-    padding-top: 15px;
-}
-.price a{
-    color: black;
+.name-item p{
+    padding-top: 10px;
+    font-size:1.5vw
 }
 .star{
     padding-top: 15px;
 }
-.item-detail{
-    padding-top: 10px;
-    padding-left: 15px;
-}
-.item-text a{
-    color: black;
-}
-.item-text{
-    font-weight: 500;
-}
-.price span a{
-    color: rgba(184, 8, 8, 0.918);
-}
-
-
-
-/* Trang details 
-. 
-. Các mã Css của trang detail được viết tại đây !
-.
-*/
-
-.detail-item-product{
-    background-color: white;
-    padding: 10px;
-    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%), 0 1px 3px 0 rgb(0 0 0 / 20%);
-    margin: 60px;
-}
-.similar-item-product{
-    margin: 30px;
-    margin-top: 60px;
-
-}
-.category-detail-item-product span a{
-    float: left;
-    text-decoration: none;
-    color: cadetblue;
-    font-size: large;
+.star img{
+    width: 7%;
 }
