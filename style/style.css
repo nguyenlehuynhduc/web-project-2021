@@ -42,7 +42,10 @@ header{
     margin: 0 auto;
     color: white;
 }
-
+table tr td a:hover{
+    color: white;
+    text-decoration: none;
+}
 
 
 /* Mã css body */
