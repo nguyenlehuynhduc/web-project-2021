@@ -253,7 +253,27 @@ span{
     width: 10%;
     /* float: right; */
 }
+.similar button{
+    float: right;
+    border: none;
+    background-color: #689f38;
+    color: white;
+    border-radius: 5px;
+    padding: 1% 1% 1% 1%;
+    float: right;
+
+}
+.similar p{
+    float: left;
+    font-size: 1.5vw;
+}
 .similar{
+    margin: 50px 20px 20px 20px;
+}
+.item-similar{
     background-color: white;
-    margin: 20px;
+    margin: 100px 20px 20px 20px;
+}
+.item-similar img{
+    padding: 15px;
 }
