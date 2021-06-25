@@ -7,6 +7,8 @@ defmodule Counter.Application do
 
   def start(_type, _args) do
     children = [
+      # Start the Ecto repository
+      Counter.Repo,
       # Start the Telemetry supervisor
       CounterWeb.Telemetry,
       # Start the PubSub system

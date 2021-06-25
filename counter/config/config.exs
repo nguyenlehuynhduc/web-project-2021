@@ -7,13 +7,16 @@
 # General application configuration
 use Mix.Config
 
+config :counter,
+  ecto_repos: [Counter.Repo]
+
 # Configures the endpoint
 config :counter, CounterWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "RRiVW2EQCpGF5t1T51qePdkFD8vjkJVI4Pug8H4YTfpjrvWx5/YVDSkqNC0zAWlK",
+  secret_key_base: "9n46QWUlPp1B/3fRy/BHG3M38nywMwMU91iCKr2AzYenGX+n5NNLTVpnTc1xuTZp",
   render_errors: [view: CounterWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Counter.PubSub,
-  live_view: [signing_salt: "8NPp7GhS"]
+  live_view: [signing_salt: "t3+WIvvR"]
 
 # Configures Elixir's Logger
 config :logger, :console,

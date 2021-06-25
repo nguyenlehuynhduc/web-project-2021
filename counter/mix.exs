@@ -44,7 +44,7 @@ defmodule Counter.MixProject do
       {:telemetry_poller, "~> 0.4"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:phoenix_live_view, github: "phoenixframework/phoenix_live_view", override: true},
+      {:phoenix_live_view, "~> 0.15.7", override: true},
       {:plug_cowboy, "~> 2.0"}
     ]
   end
@@ -57,7 +57,10 @@ defmodule Counter.MixProject do
   # See the documentation for `Mix` for more info on aliases.
   defp aliases do
     [
-      setup: ["deps.get", "cmd npm install --prefix assets"]
+      setup: ["deps.get", "ecto.setup", "cmd npm install --prefix assets"],
+      "ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
+      "ecto.reset": ["ecto.drop", "ecto.setup"],
+      test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"]
     ]
   end
 end

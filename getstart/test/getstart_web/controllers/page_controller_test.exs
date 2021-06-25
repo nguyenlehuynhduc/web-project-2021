@@ -1,5 +1,5 @@
-defmodule CounterWeb.PageControllerTest do
-  use CounterWeb.ConnCase
+defmodule GetstartWeb.PageControllerTest do
+  use GetstartWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get(conn, "/")

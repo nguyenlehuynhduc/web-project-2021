@@ -7,7 +7,7 @@ defmodule CounterWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_counter_key",
-    signing_salt: "kRM4Ml4e"
+    signing_salt: "MyabnePY"
   ]
 
   socket "/socket", CounterWeb.UserSocket,
@@ -32,6 +32,7 @@ defmodule CounterWeb.Endpoint do
     socket "/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket
     plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
+    plug Phoenix.Ecto.CheckRepoStatus, otp_app: :counter
   end
 
   plug Phoenix.LiveDashboard.RequestLogger,
