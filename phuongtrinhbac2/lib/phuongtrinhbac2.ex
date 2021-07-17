@@ -7,8 +7,7 @@ defmodule Phuongtrinhbac2 do
     if d<0 do
       "phuong trinh vo nghiem"
     else
-      x1=(-b+:math.sqrt(square))/2*a
-      x2=()
+
     end
   end
 end
